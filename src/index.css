@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply scroll-smooth; }
+  body { @apply bg-white dark:bg-brand-950 text-slate-900 dark:text-slate-100; }
+  ::selection { @apply bg-brand-300/60; }
+  :focus-visible { @apply outline-none ring-2 ring-brand-500 ring-offset-2 ring-offset-white dark:ring-offset-brand-950; }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl2 border border-slate-200 bg-white shadow-card dark:border-white/10 dark:bg-brand-900/40;
+  }
+  .label-eyebrow {
+    @apply text-[11px] font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400;
+  }
+}
